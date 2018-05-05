@@ -95,7 +95,7 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Dan_1_Back
+Dan_BandShirtCargoPants_Front
   rotate: false
   xy: 2, 2
   size: 1000, 1000
@@ -108,7 +108,7 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Dan_Underpants_Back
+Dan_1_Back
   rotate: false
   xy: 2, 2
   size: 1000, 1000
@@ -121,7 +121,7 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Dan_Jeans_Back
+Dan_Underpants_Back
   rotate: false
   xy: 2, 2
   size: 1000, 1000
@@ -134,7 +134,7 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Dan_JeansShirt_Back
+Dan_Jeans_Back
   rotate: false
   xy: 2, 2
   size: 1000, 1000
@@ -147,7 +147,7 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Dan_JeansTShirt_Back
+Dan_JeansShirt_Back
   rotate: false
   xy: 2, 2
   size: 1000, 1000
@@ -160,7 +160,7 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Dan_TShirtNaked_Back
+Dan_JeansTShirt_Back
   rotate: false
   xy: 2, 2
   size: 1000, 1000
@@ -173,7 +173,33 @@ size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
+Dan_TShirtNaked_Back
+  rotate: false
+  xy: 2, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+
+Dan15.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
 Dan_Suit_Back
+  rotate: false
+  xy: 2, 2
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1
+
+Dan16.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Dan_BandShirtCargoPants_Back
   rotate: false
   xy: 2, 2
   size: 1000, 1000
