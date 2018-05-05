@@ -4,8 +4,8 @@ public class InteractionNodeData : NodeData {
 
     public string description;
 
-    public List<string> flagsCreated;
+    public List<string> flagsCreated = new List<string>();
 
-    public List<string> flagsRemoved;
+    public List<string> flagsRemoved = new List<string>();
 
 }

@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class AdventureLog
 {
+	private static AdventureLog instance;
+	public static AdventureLog Instance {
+		get {
+			if (instance == null) {
+				instance = new AdventureLog();
+			}
+			return instance;
+		}
+	}
+
 	Dictionary<string, bool> eventList = new Dictionary<string, bool>();
 	Dictionary<string, System.Action<bool> > eventDict = new Dictionary<string, System.Action<bool> >();
 
@@ -40,5 +50,20 @@ public class AdventureLog
 		if (this.eventDict.ContainsKey(flag)) {
 			this.eventDict[flag] -= callback;
 		}
+	}
+
+	// Given a list of nodes, return only those that are currently available.
+	public List<NodeData> FilterAvailableNodes(List<NodeData> nodes) {
+		List<NodeData> available = new List<NodeData>();
+		foreach (NodeData node in nodes) {
+			bool isAvailable = true;
+			foreach (string flag in node.flagsRequired) {
+				isAvailable = isAvailable && (this.eventList.ContainsKey(flag) && this.eventList[flag]);
+			}
+			if (isAvailable) {
+				available.Add(node);
+			}
+		}
+		return available;
 	}
 }

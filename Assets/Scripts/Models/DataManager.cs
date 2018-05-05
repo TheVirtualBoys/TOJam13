@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,10 @@ public class DataManager : MonoBehaviour {
 
     public List<NodeData> allNodes;
 
+    public event Action onLoaded;
+
+    private bool isLoaded = false;
+
     public void Awake() {
         if (DataManager.Instance != null) {
             GameObject.Destroy(this.gameObject);
@@ -20,6 +25,14 @@ public class DataManager : MonoBehaviour {
         DataManager.Instance = this;
         GameObject.DontDestroyOnLoad(this.gameObject);
         this.LoadData();
+    }
+
+    public void DoOnLoaded(Action callback) {
+        if (this.isLoaded) {
+            callback.Invoke();
+        } else {
+            this.onLoaded += callback;
+        }
     }
 
     public void LoadData() {
@@ -39,8 +52,16 @@ public class DataManager : MonoBehaviour {
             if ((string)row["gsx$description"]["$t"] == "") {
                 InteractionNodeData interaction = new InteractionNodeData();
                 interaction.description = (string)row["gsx$description"]["$t"];
-                interaction.flagsCreated = new List<string>(((string)row["gsx$flagscreated"]["$t"]).Split(','));
-                interaction.flagsRemoved = new List<string>(((string)row["gsx$flagsremoved"]["$t"]).Split(','));
+                foreach (string flag in ((string)row["gsx$flagscreated"]["$t"]).Split(',')) {
+                    if (flag != "") {
+                        interaction.flagsCreated.Add(flag);
+                    }
+                }
+                foreach (string flag in ((string)row["gsx$flagsremoved"]["$t"]).Split(',')) {
+                    if (flag != "") {
+                        interaction.flagsRemoved.Add(flag);
+                    }
+                }
                 node = interaction;
             } else {
                 node = new NodeData();
@@ -48,7 +69,11 @@ public class DataManager : MonoBehaviour {
             node.parentNodeName = (string)row["gsx$parentnode"]["$t"];
             node.id = (string)row["gsx$node"]["$t"];
             node.title = (string)row["gsx$title"]["$t"];
-            node.flagsRequired = new List<string>(((string)row["gsx$node"]["$t"]).Split(','));
+            foreach (string flag in ((string)row["gsx$flagsrequired"]["$t"]).Split(',')) {
+                if (flag != "") {
+                    node.flagsRequired.Add(flag);
+                }
+            }
             this.allNodes.Add(node);
             //Debug.LogFormat("{0} {1} {2}", node.parentNodeName, node.id, node.flagsRequired);
         }
@@ -64,6 +89,12 @@ public class DataManager : MonoBehaviour {
                     otherNode.parent = node;
                 }
             }
+        }
+
+        this.isLoaded = true;
+
+        if (this.onLoaded != null) {
+            this.onLoaded.Invoke();
         }
 
         foreach (NodeData node in this.allNodes) {
