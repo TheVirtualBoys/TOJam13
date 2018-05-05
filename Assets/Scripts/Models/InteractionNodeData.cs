@@ -8,5 +8,4 @@ public class InteractionNodeData : NodeData {
 
     public List<string> flagsRemoved;
 
-
 }
