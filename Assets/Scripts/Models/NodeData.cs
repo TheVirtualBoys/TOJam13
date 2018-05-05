@@ -24,7 +24,7 @@ public class NodeData {
     }
 
     public override string ToString() {
-        return string.Format("{0} {1} {2} {3}", this.id, this.title, this.parent != null ? this.parent.id : "", this.children.Count);
+        return string.Format("id:{0} title:{1} parent:{2} kids:{3}", this.id, this.title, this.parent != null ? this.parent.id : "", this.children.Count);
     }
 
 }
