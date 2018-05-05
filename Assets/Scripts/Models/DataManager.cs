@@ -5,13 +5,20 @@ using LitJson;
 
 public class DataManager : MonoBehaviour {
 
+    public static DataManager Instance;
+
     public const string JSON_URL = "https://spreadsheets.google.com/feeds/list/1GGtccUoorjkgcKAJTSDRJnsR7t-rHIFHA6gdVChYTdc/od6/public/values?alt=json";
     
     public NodeData rootNode;
 
     public List<NodeData> allNodes;
 
-    public void Start() {
+    public void Awake() {
+        if (DataManager.Instance != null) {
+            GameObject.Destroy(this.gameObject);
+        }
+        DataManager.Instance = this;
+        GameObject.DontDestroyOnLoad(this.gameObject);
         this.LoadData();
     }
 
