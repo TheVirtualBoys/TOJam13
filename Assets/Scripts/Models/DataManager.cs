@@ -13,6 +13,8 @@ public class DataManager : MonoBehaviour {
     public NodeData rootNode;
 
     public List<NodeData> allNodes;
+    
+    public AdventureLog adventureLog;
 
     public event Action onLoaded;
 
@@ -40,6 +42,7 @@ public class DataManager : MonoBehaviour {
     }
 
     private IEnumerator LoadDataCoroutine() {
+        char[] SPLIT_FLAGS = new char[] { ',', ' ' };
         WWW www = new WWW(JSON_URL);
         yield return www;
         JsonReader reader = new JsonReader(www.text);
@@ -49,19 +52,11 @@ public class DataManager : MonoBehaviour {
 
         foreach (JsonData row in data["feed"]["entry"]) {
             NodeData node; 
-            if ((string)row["gsx$description"]["$t"] == "") {
+            if ((string)row["gsx$description"]["$t"] != "") {
                 InteractionNodeData interaction = new InteractionNodeData();
                 interaction.description = (string)row["gsx$description"]["$t"];
-                foreach (string flag in ((string)row["gsx$flagscreated"]["$t"]).Split(',')) {
-                    if (flag != "") {
-                        interaction.flagsCreated.Add(flag);
-                    }
-                }
-                foreach (string flag in ((string)row["gsx$flagsremoved"]["$t"]).Split(',')) {
-                    if (flag != "") {
-                        interaction.flagsRemoved.Add(flag);
-                    }
-                }
+                interaction.flagsCreated = new List<string>(((string)row["gsx$flagscreated"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
+                interaction.flagsRemoved = new List<string>(((string)row["gsx$flagsremoved"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
                 node = interaction;
             } else {
                 node = new NodeData();
@@ -69,11 +64,7 @@ public class DataManager : MonoBehaviour {
             node.parentNodeName = (string)row["gsx$parentnode"]["$t"];
             node.id = (string)row["gsx$node"]["$t"];
             node.title = (string)row["gsx$title"]["$t"];
-            foreach (string flag in ((string)row["gsx$flagsrequired"]["$t"]).Split(',')) {
-                if (flag != "") {
-                    node.flagsRequired.Add(flag);
-                }
-            }
+            node.flagsRequired = new List<string>(((string)row["gsx$flagsrequired"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
             this.allNodes.Add(node);
             //Debug.LogFormat("{0} {1} {2}", node.parentNodeName, node.id, node.flagsRequired);
         }
@@ -100,6 +91,7 @@ public class DataManager : MonoBehaviour {
         foreach (NodeData node in this.allNodes) {
             Debug.Log(node);
         }
+        this.adventureLog = new AdventureLog();
     }
 
 }
