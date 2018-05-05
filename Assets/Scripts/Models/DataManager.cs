@@ -39,7 +39,8 @@ public class DataManager : MonoBehaviour {
             if ((string)row["gsx$description"]["$t"] == "") {
                 InteractionNodeData interaction = new InteractionNodeData();
                 interaction.description = (string)row["gsx$description"]["$t"];
-                interaction.flagsCreated = new List<string>(((string)row["gsx$node"]["$t"]).Split(','));
+                interaction.flagsCreated = new List<string>(((string)row["gsx$flagscreated"]["$t"]).Split(','));
+                interaction.flagsRemoved = new List<string>(((string)row["gsx$flagsremoved"]["$t"]).Split(','));
                 node = interaction;
             } else {
                 node = new NodeData();
