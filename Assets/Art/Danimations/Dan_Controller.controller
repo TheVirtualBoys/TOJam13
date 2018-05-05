@@ -1611,6 +1611,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spineAnimationName: Front_CrotchGrab
   loop: 0
+--- !u!114 &114357693930965720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4cb24a5a6f143f9aeb6a04e18a5b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spineAnimationName: Front_WorkingHard
+  loop: 1
 --- !u!114 &114560853044459618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1676,6 +1689,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spineAnimationName: Front_Wave
   loop: 0
+--- !u!114 &114697474511858824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4cb24a5a6f143f9aeb6a04e18a5b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spineAnimationName: Front_RubbingTummy
+  loop: 1
 --- !u!114 &114748132234596806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1740,6 +1766,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spineAnimationName: Front_DoingStuff
+  loop: 1
+--- !u!114 &114944488563669822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df4cb24a5a6f143f9aeb6a04e18a5b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spineAnimationName: Front_PrettyFull
   loop: 1
 --- !u!114 &114966694885467182
 MonoBehaviour:
@@ -2327,7 +2366,8 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114697474511858824}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -2352,7 +2392,8 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114357693930965720}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -2455,7 +2496,8 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114944488563669822}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
