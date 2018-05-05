@@ -13,8 +13,6 @@ public class DataManager : MonoBehaviour {
     public NodeData rootNode;
 
     public List<NodeData> allNodes;
-    
-    public AdventureLog adventureLog;
 
     public event Action onLoaded;
 
@@ -91,7 +89,6 @@ public class DataManager : MonoBehaviour {
         foreach (NodeData node in this.allNodes) {
             Debug.Log(node);
         }
-        this.adventureLog = new AdventureLog();
     }
 
 }
