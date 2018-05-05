@@ -9,4 +9,8 @@ public class StaticData : MonoBehaviour
 		get;
 		private set;
 	}
+
+	private StaticData()
+	{
+	}
 }
