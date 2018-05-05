@@ -6,5 +6,7 @@ public class InteractionNodeData : NodeData {
 
     public List<string> flagsCreated;
 
+    public List<string> flagsRemoved;
+
 
 }
