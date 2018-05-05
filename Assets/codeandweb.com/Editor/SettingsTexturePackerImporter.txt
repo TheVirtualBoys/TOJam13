@@ -1,9 +1,12 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/Art/Atlases/UI_Splash/UI_Splash.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
+- Assets/Art/Atlases/UI_Splash/UI_Splash.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 enableDebugOutput: 0
