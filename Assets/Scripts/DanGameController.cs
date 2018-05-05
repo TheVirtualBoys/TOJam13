@@ -25,7 +25,6 @@ public class DanGameController : MonoBehaviour {
     /// </summary>
     private void Start() {
         this.danGameTitleController.gameObject.SetActive(true);
-
         this.danGameTitleController.StartNewGameSelected += this.HandleTitleSequenceComplete;
     }
 

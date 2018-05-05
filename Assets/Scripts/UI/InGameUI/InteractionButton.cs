@@ -50,7 +50,7 @@ public class InteractionButton : MonoBehaviour {
     /// </summary>
     private void HandleButtonPressed() {
         NodeData node = DataManager.Instance.rootNode.GetChild(this.node.id);
-        InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
+        InteractionMenu menu = GameObject.Instantiate<InteractionMenu>(this.menuPrefab);
         menu.Init(AdventureLog.Instance.FilterAvailableNodes(node.children));
     }
 
