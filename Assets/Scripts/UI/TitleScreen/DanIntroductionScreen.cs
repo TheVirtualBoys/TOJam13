@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class DanIntroductionScreen : MonoBehaviour {
 
+    [SerializeField, TextArea]
     private string danTextFormatter = "Hi, I'm {0} but you can just call me DAN!";
 
+    [SerializeField]
     private Text danTextDisplay = null;
 
     /// <summary>
@@ -14,6 +16,6 @@ public class DanIntroductionScreen : MonoBehaviour {
     /// </summary>
     /// <param name="danName">Dan name.</param>
     public void InitializeDanScreen(string danName) {
-        this.danTextDisplay.text = string.Format(this.danTextFormatter, this.danTextDisplay);
+        this.danTextDisplay.text = string.Format(this.danTextFormatter, danName);
     }
 }

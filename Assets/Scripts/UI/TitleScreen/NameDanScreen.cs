@@ -17,6 +17,8 @@ public class NameDanScreen : MonoBehaviour {
     /// The handles the submit name being entered for dan.
     /// </summary>
     public void HandleDanNameComplete() {
-        
+        if (this.OnDanNameEntered != null) {
+            this.OnDanNameEntered(danNameField.text);
+        }
     }
 }

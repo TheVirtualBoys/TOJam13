@@ -30,6 +30,9 @@ public class TitleController : MonoBehaviour {
 
     #endregion
 
+
+    public event System.Action StartNewGameSelected = null;
+
     #region Data
 
     /// <summary>
@@ -75,6 +78,7 @@ public class TitleController : MonoBehaviour {
     /// </summary>
     private void Start() {
         this.SetTitleState(TitleState.Title);
+        this.nameDanScreen.OnDanNameEntered += this.RegisterDanName;
     }
 
     #endregion
@@ -89,20 +93,24 @@ public class TitleController : MonoBehaviour {
     }
 
     /// <summary>
+    /// Handles the dan introduction screen getting clicked.
+    /// </summary>
+    public void HandleIntroScreenTapped() {
+        // TODO: Pop the thing up
+        if (this.StartNewGameSelected != null) {
+            this.StartNewGameSelected();
+        }
+    }
+
+    /// <summary>
     /// Handles registering the dan name.
     /// </summary>
     /// <param name="enteredName">Entered name.</param>
     private void RegisterDanName(string enteredName) {
+        Debug.Log("Dan name register.");
         this.danName = enteredName;
+        this.danIntroScreen.InitializeDanScreen(enteredName);
         this.SetTitleState(TitleState.DanIntro);
-    }
-
-    /// <summary>
-    /// Shows the dan intro.
-    /// </summary>
-    /// <param name="danName">Dan name.</param>
-    public void ShowDanIntro(string danName) {
-        this.danIntroScreen.gameObject.SetActive((true));
     }
 
     /// <summary>
