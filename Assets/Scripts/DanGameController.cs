@@ -20,6 +20,9 @@ public class DanGameController : MonoBehaviour {
 
     #endregion
 
+    /// <summary>
+    /// Starts the game.
+    /// </summary>
     private void Start() {
         this.danGameTitleController.gameObject.SetActive(true);
 
