@@ -195,6 +195,9 @@ public class AdventureLog
 							isAvailable = false;
 						} else if (existingNode.flagsRequired.Count < node.flagsRequired.Count) {
 							deleteExistingNode = existingNode;
+						} else if (existingNode.flagsRequired.Count > 0) {
+							// if there are two nodes with the same number of conditions, and it's greater than 0, then the second should override the first
+							deleteExistingNode = existingNode;
 						}
 					}
 				}
