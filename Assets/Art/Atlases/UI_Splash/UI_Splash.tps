@@ -183,6 +183,19 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">Sprites/UI_Splash_Button_OK.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>81,44,163,88</rect>
+                <key>scale9Paddings</key>
+                <rect>81,44,163,88</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">Sprites/UI_Splash_Decor_Circle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -522,6 +535,7 @@
             <filename>T:/New folder/New Assets To Add/UI_Splash_SpeechBubble.png</filename>
             <filename>T:/New folder/New Assets To Add/UI_Postgame_Buttons_ReplayNewGame.png</filename>
             <filename>T:/New folder/New Assets To Add/UI_Postgame_Napkin_CheckboxLine.png</filename>
+            <filename>Sprites/UI_Splash_Button_OK.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
