@@ -45,6 +45,12 @@ public class ApartmentSceneController : MonoBehaviour {
         AdventureLog.Instance.RegisterAllEvents(this.OnFlagChange);
     }
 
+    public void Update() {
+        foreach (InteractionPoint point in this.interactionPoints) {
+            point.CheckVisibleState();
+        }
+    }
+
     #endregion
 
     #region Apartment Control
