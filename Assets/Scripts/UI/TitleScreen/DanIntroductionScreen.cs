@@ -16,6 +16,6 @@ public class DanIntroductionScreen : MonoBehaviour {
     /// </summary>
     /// <param name="danName">Dan name.</param>
     public void InitializeDanScreen(string danName) {
-        this.danTextDisplay.text = string.Format(this.danTextFormatter, danName);
+        this.danTextDisplay.text = string.Format(this.danTextFormatter, danName).ToUpper();
     }
 }
