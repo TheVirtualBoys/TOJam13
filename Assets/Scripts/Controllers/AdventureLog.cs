@@ -18,6 +18,7 @@ public class AdventureLog
 	private Dictionary<string, System.Action<bool> > flagDict = new Dictionary<string, System.Action<bool> >();
 	private event System.Action<string, bool> allFlags;
 	public AdventureLogView logView = null;
+	public List<string> achievementsAchieved = new List<string>();
 
 	private AdventureLog()
 	{
@@ -93,6 +94,11 @@ public class AdventureLog
 			return this.flagStatus[flag];
 		}
 		return false;
+	}
+
+	public void SetAchievement(string achievement) {
+		this.achievementsAchieved.Add(achievement);
+		this.logView.AddLogLine(achievement);
 	}
 
 	public string[] GetAllEvents()
