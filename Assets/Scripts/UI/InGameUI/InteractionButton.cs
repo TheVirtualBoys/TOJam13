@@ -52,6 +52,7 @@ public class InteractionButton : MonoBehaviour {
         if (this.node is InteractionNodeData) {
             // leaf node, do the thing
             InteractionNodeData interaction = (InteractionNodeData)this.node;
+            Debug.Log(interaction.description);
             foreach (string flag in interaction.flagsCreated) {
                 AdventureLog.Instance.SetFlag(flag, true);
             }
