@@ -73,6 +73,7 @@ public class DanController : MonoBehaviour {
     /// </summary>
     /// <param name="danOutfitID">Dan outfit.</param>
     public void SetDanClothes(string danOutfitID) {
+        Debug.Log("setting dan clothes: " + danOutfitID);
         this.danAnimationController.SetAnimationSkin(danOutfitID);
     }
 
