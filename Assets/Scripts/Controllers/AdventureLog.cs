@@ -130,6 +130,12 @@ public class AdventureLog
 		if (!string.IsNullOrEmpty(logLine) && this.logView != null) {
 			this.logView.AddLogLine(logLine);
 		}
+
+		if (flag.StartsWith("outfit_") && value) {
+			if (this.OnDanOutfitRequest != null) {
+				this.OnDanOutfitRequest.Invoke(flag.Substring(7));
+			}
+		}
 	}
 
 	public bool GetFlag(string flag)
