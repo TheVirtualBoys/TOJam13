@@ -190,10 +190,13 @@ public class AdventureLog
 				// Override another node, or this one is overridden?
 				NodeData deleteExistingNode = null;
 				foreach (NodeData existingNode in available) {
-					if (existingNode.id == node.id) {
+					if (existingNode.id == node.id && existingNode.id != "") {
 						if (existingNode.flagsRequired.Count > node.flagsRequired.Count) {
 							isAvailable = false;
 						} else if (existingNode.flagsRequired.Count < node.flagsRequired.Count) {
+							deleteExistingNode = existingNode;
+						} else if (existingNode.flagsRequired.Count > 0) {
+							// if there are two nodes with the same number of conditions, and it's greater than 0, then the second should override the first
 							deleteExistingNode = existingNode;
 						}
 					}
