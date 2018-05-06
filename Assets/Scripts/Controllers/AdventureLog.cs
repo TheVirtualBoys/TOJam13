@@ -207,6 +207,7 @@ public class AdventureLog
 						}
 					}
 				}
+
 				if (deleteExistingNode != null) {
 					available.Remove(deleteExistingNode);
 				}

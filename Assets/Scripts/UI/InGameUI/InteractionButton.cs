@@ -56,7 +56,6 @@ public class InteractionButton : MonoBehaviour {
             Debug.Log(interaction.description);
 
             AdventureLog.Instance.UseAction(interaction);
-
         } else {
             // submenu time
             InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
