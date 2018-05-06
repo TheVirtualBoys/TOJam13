@@ -30,6 +30,20 @@ public class DanController : MonoBehaviour {
 
     #endregion
 
+    #region Monobehaviour
+
+    private void Start() {
+        AdventureLog.Instance.OnEventAnimationRequest += this.SetDanimation;
+        AdventureLog.Instance.OnDanOutfitRequest += this.SetDanClothes;
+    }
+
+    private void OnDestroy() {
+        AdventureLog.Instance.OnEventAnimationRequest -= this.SetDanimation;
+        AdventureLog.Instance.OnDanOutfitRequest -= this.SetDanClothes;
+    }
+
+    #endregion
+
     #region Dan Logic
 
     /// <summary>
