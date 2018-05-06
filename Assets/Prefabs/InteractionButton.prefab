@@ -75,7 +75,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPrefab: {fileID: 114719006129521980, guid: bbc5d46a12a78439fb744f2db5a373b7,
     type: 2}
-  menuContainer: {fileID: 224746445468764644}
   button: {fileID: 114335760100402842}
   buttonText: {fileID: 114673348752133460}
 --- !u!114 &114335760100402842
