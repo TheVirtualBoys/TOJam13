@@ -15,6 +15,11 @@ public class AdventureLog
     /// </summary>
     public System.Action<string> OnDanOutfitRequest = null;
 
+    /// <summary>
+    /// Called when an action gets used.
+    /// </summary>
+    public System.Action OnActionUsed = null;
+
 	private static AdventureLog instance;
 	public static AdventureLog Instance {
 		get {
@@ -76,6 +81,35 @@ public class AdventureLog
 		}
 	}
 
+    /// <summary>
+    /// Uses an action. 
+    /// This will set/unset all the flags and update an interaction animation.
+    /// </summary>
+    /// <param name="interaction">Interaction.</param>
+    public void UseAction(InteractionNodeData interaction) {
+        foreach (string flag in interaction.flagsCreated) {
+            AdventureLog.Instance.SetFlag(flag, true, interaction.description);
+        }
+
+        foreach (string flag in interaction.flagsRemoved) {
+            AdventureLog.Instance.SetFlag(flag, false, interaction.description);
+        }
+
+        if (interaction.achievement != "") {
+            AdventureLog.Instance.SetAchievement(interaction.achievement);
+        }
+
+        if (this.OnEventAnimationRequest != null && !string.IsNullOrEmpty(interaction.animation)) {
+            this.OnEventAnimationRequest(interaction.animation);
+        }
+
+        // TODO: Dan outfit changes.
+
+        if (this.OnActionUsed != null) {
+            this.OnActionUsed();
+        }
+    }
+
 	// Set or unset a flag and call any registered callbacks to that flag
 	public void SetFlag(string flag, bool value, string logLine = "")
 	{
@@ -97,16 +131,6 @@ public class AdventureLog
 			this.logView.AddLogLine(logLine);
 		}
 	}
-
-    public void SetFlag(string flag, bool value, InteractionNodeData interactionData) {
-        this.SetFlag(flag, value, interactionData.description);
-
-        if (this.OnEventAnimationRequest != null && !string.IsNullOrEmpty(interactionData.animation)) {
-            this.OnEventAnimationRequest(interactionData.animation);
-        }
-
-        // TODO: Dan outfit changes.
-    }
 
 	public bool GetFlag(string flag)
 	{

@@ -53,17 +53,9 @@ public class InteractionButton : MonoBehaviour {
             // leaf node, do the thing
             InteractionNodeData interaction = (InteractionNodeData)this.node;
             Debug.Log(interaction.description);
-            foreach (string flag in interaction.flagsCreated) {
-                AdventureLog.Instance.SetFlag(flag, true, interaction);
-            }
 
-            foreach (string flag in interaction.flagsRemoved) {
-                AdventureLog.Instance.SetFlag(flag, false, interaction);
-            }
+            AdventureLog.Instance.UseAction(interaction);
 
-            if (interaction.achievement != "") {
-                AdventureLog.Instance.SetAchievement(interaction.achievement);
-            }
         } else {
             // submenu time
             InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
