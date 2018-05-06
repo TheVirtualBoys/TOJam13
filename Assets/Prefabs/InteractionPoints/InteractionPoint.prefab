@@ -369,7 +369,8 @@ MonoBehaviour:
   interactionRootID: 
   interactionButton: {fileID: 114547634629039600}
   interactionTitleBar: {fileID: 1965527282599420}
-  interactionMenuSelector: {fileID: 114617032745372822}
+  interactionMenuSelector: {fileID: 114225605802965802, guid: 95724ffd1e683460e81e014d2f3add53,
+    type: 2}
   interactionName: {fileID: 114297866118186440}
   interactionAreaIdleAnimation: BackIdle
   danLocation: {fileID: 0}
@@ -423,7 +424,7 @@ RectTransform:
   m_GameObject: {fileID: 1988463641857892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 224373667274215448}
   m_Father: {fileID: 0}
