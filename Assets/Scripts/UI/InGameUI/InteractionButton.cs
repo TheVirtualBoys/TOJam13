@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
 public class InteractionButton : MonoBehaviour {
 
     public InteractionMenu menuPrefab;
@@ -14,33 +13,34 @@ public class InteractionButton : MonoBehaviour {
     /// The button that'll handle the interaction with this interaction point.
     /// </summary>
     [SerializeField]
-    private Button interactionPointButton = null;
+    private Button button = null;
 
-    public void Init(NodeData node) {
+    public Text buttonText = null;
+
+    private InteractionMenu parentMenu;
+
+    public void Init(NodeData node, InteractionMenu parentMenu) {
         this.node = node;
+        this.parentMenu = parentMenu;
+        if (this.buttonText != null) {
+            this.buttonText.text = node.title;
+        }
     }
 
     #region Monobehaviour
 
     /// <summary>
-    /// Get the buttons.
-    /// </summary>
-    private void Reset() {
-        this.interactionPointButton = this.GetComponent<Button>();
-    }
-
-    /// <summary>
     /// Start this instance.
     /// </summary>
     private void Start() {
-        this.interactionPointButton.onClick.AddListener(this.HandleButtonPressed);
+        this.button.onClick.AddListener(this.HandleButtonPressed);
     }
 
     /// <summary>
     /// Ons the destroy.
     /// </summary>
     private void OnDestroy() {
-        this.interactionPointButton.onClick.RemoveListener(this.HandleButtonPressed);
+        this.button.onClick.RemoveListener(this.HandleButtonPressed);
     }
 
     #endregion
@@ -49,9 +49,24 @@ public class InteractionButton : MonoBehaviour {
     /// Handles the button being pressed.
     /// </summary>
     private void HandleButtonPressed() {
-        NodeData node = DataManager.Instance.rootNode.GetChild(this.node.id);
-        InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
-        menu.Init(AdventureLog.Instance.FilterAvailableNodes(node.children));
+        if (this.node is InteractionNodeData) {
+            // leaf node, do the thing
+            InteractionNodeData interaction = (InteractionNodeData)this.node;
+            foreach (string flag in interaction.flagsCreated) {
+                AdventureLog.Instance.SetFlag(flag, true);
+            }
+            foreach (string flag in interaction.flagsRemoved) {
+                AdventureLog.Instance.SetFlag(flag, false);
+            }
+        } else {
+            // submenu time
+            InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
+            menu.transform.SetParent(this.parentMenu != null ? this.parentMenu.transform.parent : this.transform);
+            menu.Init(AdventureLog.Instance.FilterAvailableNodes(this.node.children));
+        }
+        if (this.parentMenu != null) {
+            this.parentMenu.Close();
+        }
     }
 
 }
