@@ -193,13 +193,6 @@ public class AdventureLog
 				isAvailable = isAvailable && (this.flagStatus.ContainsKey(flag) && this.flagStatus[flag]);
 			}
 
-            if (node is InteractionNodeData) {
-                InteractionNodeData interaction = node as InteractionNodeData;
-                if (interaction.flagsCreated.TrueForAll(AdventureLog.Instance.GetFlag)) {
-                    isAvailable = false;
-                }
-            }
-
 			if (isAvailable) {
 				// Override another node, or this one is overridden?
 				NodeData deleteExistingNode = null;
