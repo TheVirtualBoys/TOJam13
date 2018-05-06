@@ -313,7 +313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1243631068039244
 GameObject:
   m_ObjectHideFlags: 1
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 4040937466005952}
   - component: {fileID: 20028800797246866}
   - component: {fileID: 124599983533258672}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 33815701917223480}
   - component: {fileID: 23090253958442244}
   - component: {fileID: 114318502286370478}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Danimator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -939,6 +939,8 @@ GameObject:
   - component: {fileID: 114801812356037660}
   - component: {fileID: 114264031510327930}
   - component: {fileID: 114256931684226346}
+  - component: {fileID: 114684416481141128}
+  - component: {fileID: 114238717136500222}
   m_Layer: 5
   m_Name: TitleScreen
   m_TagString: Untagged
@@ -1172,7 +1174,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1794371505518730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.9, y: -71.5, z: -1}
+  m_LocalPosition: {x: -5.9, y: -349, z: -1}
   m_LocalScale: {x: 81.81648, y: 81.81648, z: 81.81648}
   m_Children: []
   m_Father: {fileID: 224029328468748130}
@@ -1199,10 +1201,10 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1248,7 +1250,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
 --- !u!33 &33815701917223480
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1706,6 +1708,24 @@ MonoBehaviour:
   nameDanScreen: {fileID: 114228211436230962}
   danIntroScreen: {fileID: 114416650168994548}
   completionScreen: {fileID: 114296759632522930}
+--- !u!114 &114238717136500222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858811939553436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!114 &114252431729583490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2531,6 +2551,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114684416481141128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1858811939553436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!114 &114700599116366948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2785,7 +2819,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114719967334680248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114229204526890256}
+        m_MethodName: HandleTitleScreenTapped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114776619110373356
@@ -3642,7 +3687,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &224004964909158090
 RectTransform:
