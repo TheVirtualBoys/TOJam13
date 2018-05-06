@@ -21,6 +21,7 @@ public class InteractionButton : MonoBehaviour {
 
     public void Init(NodeData node, InteractionMenu parentMenu) {
         this.node = node;
+
         this.parentMenu = parentMenu;
         if (this.buttonText != null) {
             this.buttonText.text = node.title;
@@ -57,14 +58,11 @@ public class InteractionButton : MonoBehaviour {
             AdventureLog.Instance.UseAction(interaction);
 
         } else {
+            // submenu time
+            InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
+            menu.transform.SetParent(this.parentMenu != null ? this.parentMenu.transform.parent : this.transform);
             List<NodeData> avaliableNodes = AdventureLog.Instance.FilterAvailableNodes(this.node.children);
-
-            if (avaliableNodes.Count > 0) {
-                // submenu time
-                InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
-                menu.transform.SetParent(this.parentMenu != null ? this.parentMenu.transform.parent : this.transform);
-                menu.Init(avaliableNodes);
-            }
+            menu.Init(avaliableNodes);
         }
 
         if (this.parentMenu != null) {

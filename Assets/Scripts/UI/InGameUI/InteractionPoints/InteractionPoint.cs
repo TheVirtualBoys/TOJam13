@@ -24,19 +24,22 @@ public class InteractionPoint : MonoBehaviour {
     private string interactionRootID = string.Empty;
 
     /// <summary>
-    /// The interaction menu prefab.
-    /// </summary>
-    [SerializeField]
-    private InteractionMenu interactionMenuPrefab = null;
-
-    /// <summary>
     /// The interaction button.
     /// </summary>
     [SerializeField]
     private Button interactionButton = null;
 
+    /// <summary>
+    /// This is the actual display that shows dan options.
+    /// </summary>
     [SerializeField]
     private GameObject interactionTitleBar = null;
+
+    /// <summary>
+    /// The interaction menu selector.
+    /// </summary>
+    [SerializeField]
+    private PointMenu interactionMenuSelector = null;
 
     [SerializeField]
     private Text interactionName = null;
@@ -68,6 +71,8 @@ public class InteractionPoint : MonoBehaviour {
         }
     }
 
+    private bool interactionPointOpen = false;
+
     #endregion
 
     #region Monobehaviour
@@ -78,9 +83,11 @@ public class InteractionPoint : MonoBehaviour {
     private void Start() {
         DataManager.Instance.DoOnLoaded(() => {
             this.interactionRootNodeData = DataManager.Instance.rootNode.GetChild(this.interactionRootID);
-            this.interactionName.text = this.interactionRootNodeData.title;
+            if (this.interactionRootNodeData == null) {
+                Debug.LogError("The data for node ID " + this.interactionRootID + " is null");
+            }
 
-            this.GetComponent<InteractionButton>().Init(DataManager.Instance.rootNode.GetChild(this.interactionRootID), null);
+            this.interactionName.text = this.interactionRootNodeData.title;
         });
 
         this.interactionButton.onClick.AddListener(this.HandleButtonPressed);
@@ -95,6 +102,19 @@ public class InteractionPoint : MonoBehaviour {
 
     public void SetTitleDisplayState(bool displayState) {
         this.interactionTitleBar.gameObject.SetActive(displayState);
+    }
+
+    public void CloseInteractionPoint() {
+        this.SetTitleDisplayState(false);
+        this.interactionMenuSelector.ClearMenu();
+    }
+
+    public void OpenInteractionPoint() {
+        this.SetTitleDisplayState(true);
+
+        // Get populate the menu of this display with the menu items for the display.
+        List<NodeData> rootNodeDataList = AdventureLog.Instance.FilterAvailableNodes(this.interactionRootNodeData.children);
+        this.interactionMenuSelector.SetRootNode(this.interactionRootNodeData);
     }
 
     /// <summary>
