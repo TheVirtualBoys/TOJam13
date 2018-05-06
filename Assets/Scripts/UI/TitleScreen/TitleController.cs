@@ -130,4 +130,13 @@ public class TitleController : MonoBehaviour {
 
     #endregion
 
+
+    public void HandleRetryButton() {
+        AdventureLog.Instance.ResetFlags();
+    }
+
+    public void HandleQuitButton() {
+        this.completionScreen.ClearAchievements();
+        this.SetTitleState(TitleState.Title);
+    }
 }
