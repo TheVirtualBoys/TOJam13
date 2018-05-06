@@ -54,11 +54,13 @@ public class InteractionButton : MonoBehaviour {
             InteractionNodeData interaction = (InteractionNodeData)this.node;
             Debug.Log(interaction.description);
             foreach (string flag in interaction.flagsCreated) {
-                AdventureLog.Instance.SetFlag(flag, true, interaction.description);
+                AdventureLog.Instance.SetFlag(flag, true, interaction);
             }
+
             foreach (string flag in interaction.flagsRemoved) {
-                AdventureLog.Instance.SetFlag(flag, false, interaction.description);
+                AdventureLog.Instance.SetFlag(flag, false, interaction);
             }
+
             if (interaction.achievement != "") {
                 AdventureLog.Instance.SetAchievement(interaction.achievement);
             }

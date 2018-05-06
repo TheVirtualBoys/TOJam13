@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class AdventureLog
 {
+
+    /// <summary>
+    /// The event animation request.
+    /// </summary>
+    public System.Action<string> OnEventAnimationRequest = null;
+
+    /// <summary>
+    /// Event that will happen when the game requests that the dan updates his outfit.
+    /// </summary>
+    public System.Action<string> OnDanOutfitRequest = null;
+
 	private static AdventureLog instance;
 	public static AdventureLog Instance {
 		get {
@@ -20,8 +31,7 @@ public class AdventureLog
 	public AdventureLogView logView = null;
 	public List<string> achievementsAchieved = new List<string>();
 
-	private AdventureLog()
-	{
+	private AdventureLog() {
 		DataManager.Instance.DoOnLoaded(this.HandleDataManagerLoaded);
 	}
 
@@ -87,6 +97,16 @@ public class AdventureLog
 			this.logView.AddLogLine(logLine);
 		}
 	}
+
+    public void SetFlag(string flag, bool value, InteractionNodeData interactionData) {
+        this.SetFlag(flag, value, interactionData.description);
+
+        if (this.OnEventAnimationRequest != null && !string.IsNullOrEmpty(interactionData.animation)) {
+            this.OnEventAnimationRequest(interactionData.animation);
+        }
+
+        // TODO: Dan outfit changes.
+    }
 
 	public bool GetFlag(string flag)
 	{
