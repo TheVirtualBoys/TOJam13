@@ -12171,6 +12171,15 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1167101098896808, guid: fdb0d00047f194fa4b49aa457c26f36d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114229204526890256, guid: fdb0d00047f194fa4b49aa457c26f36d,
+        type: 2}
+      propertyPath: completionScreen
+      value: 
+      objectReference: {fileID: 1666955189}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb0d00047f194fa4b49aa457c26f36d, type: 2}
   m_IsPrefabParent: 0
@@ -12413,6 +12422,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1666955189 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114217450994925542, guid: fdb0d00047f194fa4b49aa457c26f36d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1492025038}
+  m_Script: {fileID: 11500000, guid: 931896933b7bd4a19b3bdf7b2cd1e9d1, type: 3}
 --- !u!114 &1682381540 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
