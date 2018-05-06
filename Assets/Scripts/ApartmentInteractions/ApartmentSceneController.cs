@@ -51,7 +51,11 @@ public class ApartmentSceneController : MonoBehaviour {
         this.apartmentDan.MoveToPoint(pointSelected);
 
         foreach(InteractionPoint interactionPoint in this.interactionPoints) {
-            interactionPoint.SetTitleDisplayState(interactionPoint == pointSelected);
+            if (interactionPoint == pointSelected) {
+                interactionPoint.OpenInteractionPoint();
+            } else {
+                interactionPoint.CloseInteractionPoint();
+            }
         }
     }
 
@@ -61,6 +65,10 @@ public class ApartmentSceneController : MonoBehaviour {
     public void ResetApartment() {
         this.apartmentDan.SetDanClothes(DEFAULT_SKIN);
         this.apartmentDan.transform.position = DEFAULT_DAN_POSITION;
+
+        foreach(InteractionPoint point in this.interactionPoints) {
+            point.CloseInteractionPoint();
+        }
     }
 
     #endregion
