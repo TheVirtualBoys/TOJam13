@@ -3117,7 +3117,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114217450994925542}
+      - m_Target: {fileID: 114229204526890256}
         m_MethodName: HandleRetryButton
         m_Mode: 1
         m_Arguments:
@@ -5713,7 +5713,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114217450994925542}
+      - m_Target: {fileID: 114229204526890256}
         m_MethodName: HandleQuitButton
         m_Mode: 1
         m_Arguments:

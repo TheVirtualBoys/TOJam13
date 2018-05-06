@@ -42,13 +42,4 @@ public class EndScreen : MonoBehaviour {
     public void ClearAchievements() {
         EndScreen.persistentAchievements.Clear();
     }
-
-    public void HandleRetryButton() {
-        
-    }
-
-    public void HandleQuitButton() {
-
-    }
-
 }
