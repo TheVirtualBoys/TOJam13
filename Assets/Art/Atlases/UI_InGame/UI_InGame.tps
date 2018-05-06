@@ -183,6 +183,19 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">Sprites/UI_InGame_Menu_X.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>22,17,44,33</rect>
+                <key>scale9Paddings</key>
+                <rect>22,17,44,33</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">T:/New folder/New Assets To Add/UI_InGame_BottomBar.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -290,6 +303,7 @@
             <filename>T:/New folder/New Assets To Add/UI_InGame_Menu_Title.png</filename>
             <filename>T:/New folder/New Assets To Add/UI_InGame_Notification.png</filename>
             <filename>T:/New folder/New Assets To Add/UI_InGame_BottomBar.png</filename>
+            <filename>Sprites/UI_InGame_Menu_X.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
