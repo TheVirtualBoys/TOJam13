@@ -55,6 +55,8 @@ public class DataManager : MonoBehaviour {
                 interaction.description = (string)row["gsx$description"]["$t"];
                 interaction.flagsCreated = new List<string>(((string)row["gsx$flagscreated"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
                 interaction.flagsRemoved = new List<string>(((string)row["gsx$flagsremoved"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
+                interaction.animation = (string)row["gsx$animation"]["$t"];
+                interaction.achievement = (string)row["gsx$achievement"]["$t"];
                 node = interaction;
             } else {
                 node = new NodeData();
