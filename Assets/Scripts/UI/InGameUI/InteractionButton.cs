@@ -54,10 +54,10 @@ public class InteractionButton : MonoBehaviour {
             InteractionNodeData interaction = (InteractionNodeData)this.node;
             Debug.Log(interaction.description);
             foreach (string flag in interaction.flagsCreated) {
-                AdventureLog.Instance.SetFlag(flag, true);
+                AdventureLog.Instance.SetFlag(flag, true, interaction.description);
             }
             foreach (string flag in interaction.flagsRemoved) {
-                AdventureLog.Instance.SetFlag(flag, false);
+                AdventureLog.Instance.SetFlag(flag, false, interaction.description);
             }
         } else {
             // submenu time
