@@ -107,10 +107,14 @@ public class TitleController : MonoBehaviour {
     /// </summary>
     /// <param name="enteredName">Entered name.</param>
     private void RegisterDanName(string enteredName) {
-        Debug.Log("Dan name register.");
         this.danName = enteredName;
         this.danIntroScreen.InitializeDanScreen(enteredName);
         this.SetTitleState(TitleState.DanIntro);
+    }
+
+    public void GameOver() {
+        this.SetTitleState(TitleState.EndScreen);
+        //TODO: Set up the end screen stuff based on data.
     }
 
     /// <summary>

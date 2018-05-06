@@ -8,7 +8,24 @@ using UnityEngine;
 /// </summary>
 public class ApartmentSceneController : MonoBehaviour {
 
+    #region Constants
+
+    private const string DEFAULT_SKIN = "Naked";
+
+    /// <summary>
+    /// The position to default dan to.
+    /// </summary>
+    private static readonly Vector3 DEFAULT_DAN_POSITION = new Vector3(127, -39, 0);
+
+    #endregion
+
     #region Data
+
+    /// <summary>
+    /// The apartment 
+    /// </summary>
+    [SerializeField]
+    private DanController apartmentDan = null;
 
     /// <summary>
     /// List of all the interaction points in the apartment.
@@ -18,13 +35,28 @@ public class ApartmentSceneController : MonoBehaviour {
 
     #endregion
 
+    #region Monobehaviour
+
+    private void Start() {
+        foreach (InteractionPoint iPoint in this.interactionPoints) {
+            iPoint.OnInteractionPointSelected += this.HandleInteractionPointSelected;
+        }
+    }
+
+    #endregion
+
     #region Apartment Control
+
+    private void HandleInteractionPointSelected(InteractionPoint pointSelected) {
+        this.apartmentDan.MoveToPoint(pointSelected);
+    }
 
     /// <summary>
     /// Resets the apartment scene so that we can play a new dan session.
     /// </summary>
     public void ResetApartment() {
-        
+        this.apartmentDan.SetDanClothes(DEFAULT_SKIN);
+        this.apartmentDan.transform.position = DEFAULT_DAN_POSITION;
     }
 
     #endregion

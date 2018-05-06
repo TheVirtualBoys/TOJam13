@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 114470629786066624}
   - component: {fileID: 114590148129854734}
   - component: {fileID: 114164191387713956}
+  - component: {fileID: 222309897170790076}
+  - component: {fileID: 114136696962586932}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Untagged
@@ -44,6 +46,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114136696962586932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1110426078342008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114164191387713956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -57,7 +86,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPrefab: {fileID: 114719006129521980, guid: bbc5d46a12a78439fb744f2db5a373b7,
     type: 2}
-  interactionPointButton: {fileID: 114470629786066624}
+  menuContainer: {fileID: 224539338562110184}
+  button: {fileID: 114470629786066624}
+  buttonText: {fileID: 0}
 --- !u!114 &114470629786066624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,7 +124,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 114136696962586932}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -111,6 +142,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionRootID: kitchen
+--- !u!222 &222309897170790076
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1110426078342008}
 --- !u!224 &224539338562110184
 RectTransform:
   m_ObjectHideFlags: 1

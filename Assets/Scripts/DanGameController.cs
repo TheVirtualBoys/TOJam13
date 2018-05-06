@@ -18,6 +18,12 @@ public class DanGameController : MonoBehaviour {
     [SerializeField]
     private ApartmentSceneController apartmentController = null;
 
+    /// <summary>
+    /// The game action counter.
+    /// </summary>
+    [SerializeField]
+    private GameActionCounter actionCounter = null;
+
     #endregion
 
     /// <summary>
@@ -25,8 +31,8 @@ public class DanGameController : MonoBehaviour {
     /// </summary>
     private void Start() {
         this.danGameTitleController.gameObject.SetActive(true);
-
         this.danGameTitleController.StartNewGameSelected += this.HandleTitleSequenceComplete;
+        this.actionCounter.OnGameActionLimitReached += this.HandleActionLimitReleased;
     }
 
     #region Dan Game Control
@@ -34,11 +40,19 @@ public class DanGameController : MonoBehaviour {
     /// <summary>
     /// Handles the 
     /// </summary>
+    [EditorButton]
     private void HandleTitleSequenceComplete() {
         this.apartmentController.ResetApartment();
         this.danGameTitleController.gameObject.SetActive(false);
+        this.actionCounter.ResetActionCounter();
+
 
         // TODO: Whatever kicks off the game loops.
+    }
+
+    private void HandleActionLimitReleased() {
+        this.danGameTitleController.gameObject.SetActive(true);
+        this.danGameTitleController.GameOver();
     }
 
     #endregion
