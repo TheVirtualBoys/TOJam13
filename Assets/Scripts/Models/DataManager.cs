@@ -53,24 +53,26 @@ public class DataManager : MonoBehaviour {
 
         foreach (JsonData row in data["feed"]["entry"]) {
             NodeData node; 
-            if ((string)row["gsx$parentnode"]["$t"] != "") {
-                if ((string)row["gsx$description"]["$t"] != "") {
+            string parentNode = ((string)row["gsx$parentnode"]["$t"]).Trim();
+            if (!string.IsNullOrEmpty(parentNode)) {
+                string description = ((string)row["gsx$description"]["$t"]).Trim();
+                if (!string.IsNullOrEmpty(description)) {
                     InteractionNodeData interaction = new InteractionNodeData();
-                    interaction.description = (string)row["gsx$description"]["$t"];
-                    interaction.flagsCreated = new List<string>(((string)row["gsx$flagscreated"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
-                    interaction.flagsRemoved = new List<string>(((string)row["gsx$flagsremoved"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
-                    interaction.animation = (string)row["gsx$animation"]["$t"];
-                    interaction.achievement = (string)row["gsx$achievement"]["$t"];
-                    if (interaction.achievement != "") {
+                    interaction.description         = description;
+                    interaction.flagsCreated        = new List<string>(((string)row["gsx$flagscreated"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
+                    interaction.flagsRemoved        = new List<string>(((string)row["gsx$flagsremoved"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
+                    interaction.animation           = ((string)row["gsx$animation"]["$t"]).Trim();
+                    interaction.achievement         = ((string)row["gsx$achievement"]["$t"]).Trim();
+                    if (!string.IsNullOrEmpty(interaction.achievement)) {
                         this.allAchievements.Add(interaction.achievement);
                     }
                     node = interaction;
                 } else {
                     node = new NodeData();
                 }
-                node.parentNodeName = (string)row["gsx$parentnode"]["$t"];
-                node.id = (string)row["gsx$node"]["$t"];
-                node.title = (string)row["gsx$title"]["$t"];
+                node.parentNodeName = parentNode;
+                node.id = ((string)row["gsx$node"]["$t"]).Trim();
+                node.title = ((string)row["gsx$title"]["$t"]).Trim();
                 node.flagsRequired = new List<string>(((string)row["gsx$flagsrequired"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
                 this.allNodes.Add(node);
             }
