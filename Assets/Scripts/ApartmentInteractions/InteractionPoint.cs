@@ -71,13 +71,10 @@ public class InteractionPoint : MonoBehaviour {
     /// </summary>
     private void Start() {
         DataManager.Instance.DoOnLoaded(() => {
-            Debug.Log("Data loaded!");
-            this.interactionRootNodeData = DataManager.Instance.allNodes.Find((NodeData data) => {
-                return data.id == this.interactionRootID;
-            });
-
-            this.interactionButton.onClick.AddListener(this.HandleButtonPressed);
+            this.GetComponent<InteractionButton>().Init(DataManager.Instance.rootNode.GetChild(this.interactionRootID), null);
         });
+
+        this.interactionButton.onClick.AddListener(this.HandleButtonPressed);
     }
 
     /// <summary>
@@ -91,11 +88,6 @@ public class InteractionPoint : MonoBehaviour {
     /// Handles the button being pressed.
     /// </summary>
     private void HandleButtonPressed() {
-        Debug.Log("Button");
-        NodeData node = DataManager.Instance.rootNode.GetChild(this.interactionRootNodeData.id);
-        InteractionMenu menu = Object.Instantiate<InteractionMenu>(this.interactionMenuPrefab);
-        menu.Init(AdventureLog.Instance.FilterAvailableNodes(node.children));
-
         if (this.OnInteractionPointSelected != null) {
             this.OnInteractionPointSelected(this);
         }

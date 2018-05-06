@@ -9,12 +9,15 @@ public class InteractionMenu : MonoBehaviour {
     public Transform buttonContainer;
 
     public void Init(List<NodeData> nodes) {
-        Debug.Log(nodes.Count);
         foreach (NodeData node in nodes) {
-            Debug.Log(node);
             InteractionButton button = GameObject.Instantiate(this.buttonPrefab);
+            button.Init(node, this);
             button.transform.SetParent(this.buttonContainer);
         }
+    }
+
+    public void Close() {
+        GameObject.Destroy(this.gameObject);
     }
 
 }
