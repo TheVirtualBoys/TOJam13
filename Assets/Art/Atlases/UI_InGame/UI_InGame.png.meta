@@ -20,6 +20,7 @@ TextureImporter:
     21300026: UI_InGame_Menu_Choice
     21300028: UI_InGame_Menu_Title
     21300030: UI_InGame_Notification
+    21300032: UI_InGame_Menu_X
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -142,8 +143,8 @@ TextureImporter:
       name: UI_InGame_Counter_03
       rect:
         serializedVersion: 2
-        x: 1571
-        y: 14
+        x: 1592
+        y: 86
         width: 61
         height: 66
       alignment: 9
@@ -156,7 +157,7 @@ TextureImporter:
       name: UI_InGame_Counter_04
       rect:
         serializedVersion: 2
-        x: 1592
+        x: 1655
         y: 86
         width: 53
         height: 66
@@ -170,7 +171,7 @@ TextureImporter:
       name: UI_InGame_Counter_05
       rect:
         serializedVersion: 2
-        x: 1687
+        x: 1714
         y: 22
         width: 58
         height: 64
@@ -226,7 +227,7 @@ TextureImporter:
       name: UI_InGame_Counter_09
       rect:
         serializedVersion: 2
-        x: 1634
+        x: 1661
         y: 19
         width: 51
         height: 65
@@ -240,7 +241,7 @@ TextureImporter:
       name: UI_InGame_Counter_10
       rect:
         serializedVersion: 2
-        x: 1647
+        x: 1710
         y: 88
         width: 74
         height: 64
@@ -286,6 +287,20 @@ TextureImporter:
         y: 49
         width: 488
         height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_InGame_Menu_X
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 13
+        width: 88
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
