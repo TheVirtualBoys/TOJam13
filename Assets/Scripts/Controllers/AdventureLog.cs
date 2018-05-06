@@ -137,7 +137,23 @@ public class AdventureLog
 				isAvailable = isAvailable && (this.flagStatus.ContainsKey(flag) && this.flagStatus[flag]);
 			}
 			if (isAvailable) {
-				available.Add(node);
+				// Override another node, or this one is overridden?
+				NodeData deleteExistingNode = null;
+				foreach (NodeData existingNode in available) {
+					if (existingNode.id == node.id) {
+						if (existingNode.flagsRequired.Count > node.flagsRequired.Count) {
+							isAvailable = false;
+						} else if (existingNode.flagsRequired.Count < node.flagsRequired.Count) {
+							deleteExistingNode = existingNode;
+						}
+					}
+				}
+				if (deleteExistingNode != null) {
+					available.Remove(deleteExistingNode);
+				}
+				if (isAvailable) {
+					available.Add(node);
+				}
 			}
 		}
 		return available;
