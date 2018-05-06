@@ -14,6 +14,8 @@ public class DataManager : MonoBehaviour {
 
     public List<NodeData> allNodes;
 
+    public List<string> allAchievements;
+
     public event Action onLoaded;
 
     private bool isLoaded = false;
@@ -47,6 +49,7 @@ public class DataManager : MonoBehaviour {
         JsonData data = JsonMapper.ToObject(www.text);
 
         this.allNodes = new List<NodeData>();
+        this.allAchievements = new List<string>();
 
         foreach (JsonData row in data["feed"]["entry"]) {
             NodeData node; 
@@ -55,6 +58,11 @@ public class DataManager : MonoBehaviour {
                 interaction.description = (string)row["gsx$description"]["$t"];
                 interaction.flagsCreated = new List<string>(((string)row["gsx$flagscreated"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
                 interaction.flagsRemoved = new List<string>(((string)row["gsx$flagsremoved"]["$t"]).Split(SPLIT_FLAGS, System.StringSplitOptions.RemoveEmptyEntries));
+                interaction.animation = (string)row["gsx$animation"]["$t"];
+                interaction.achievement = (string)row["gsx$achievement"]["$t"];
+                if (interaction.achievement != "") {
+                    this.allAchievements.Add(interaction.achievement);
+                }
                 node = interaction;
             } else {
                 node = new NodeData();

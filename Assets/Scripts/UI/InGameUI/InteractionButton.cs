@@ -59,6 +59,9 @@ public class InteractionButton : MonoBehaviour {
             foreach (string flag in interaction.flagsRemoved) {
                 AdventureLog.Instance.SetFlag(flag, false, interaction.description);
             }
+            if (interaction.achievement != "") {
+                AdventureLog.Instance.SetAchievement(interaction.achievement);
+            }
         } else {
             // submenu time
             InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
