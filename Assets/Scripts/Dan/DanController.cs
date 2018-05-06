@@ -15,6 +15,9 @@ public class DanController : MonoBehaviour {
     [SerializeField]
     private SpineAnimMecanimController danAnimationController = null;
 
+    [SerializeField, Header("----- Movement -----")]
+    private float danSpeed = 0f;
+
     /// <summary>
     /// Flag that will be set if the Dan is currently moving.
     /// </summary>
@@ -40,7 +43,7 @@ public class DanController : MonoBehaviour {
 
         this.isMoving = true;
         // Moves the dan from his current location to the new location.
-        this.movementCoroutine = this.StartCoroutine(this.DanMovementCoroutine(point.DanLocation.position));
+        this.movementCoroutine = this.StartCoroutine(this.DanMovementCoroutine(point));
     }
 
     /// <summary>
@@ -63,15 +66,30 @@ public class DanController : MonoBehaviour {
     /// Dans the movement coroutine.
     /// </summary>
     /// <returns>The movement coroutine.</returns>
-    private IEnumerator DanMovementCoroutine(Vector3 danDestinationWorldPos) {
+    private IEnumerator DanMovementCoroutine(InteractionPoint moveToPoint) {
+        Vector3 danDestinationWorldPos = moveToPoint.DanLocation.position;
+
         this.isMoving = true;
-
+        string walkingAnimation = "FrontWalk";
         // Figure out if the point is higher or lower than the current dan position.
+        if (danDestinationWorldPos.y > this.transform.position.y) {
+            walkingAnimation = "BackWalk";
+        }
 
-        // Do the dan movement. For now just teleport.
+        this.SetDanimation(walkingAnimation);
+        while (true) {
+            Vector2 direction = danDestinationWorldPos - this.transform.position;
+            if (direction.sqrMagnitude < ((this.danSpeed * Time.deltaTime) * (this.danSpeed * Time.deltaTime))) {
+                break;
+            }
+            direction.Normalize();
+            this.transform.Translate((direction * danSpeed) * Time.deltaTime, Space.World);
+            yield return new WaitForEndOfFrame();
+        }
+
         this.transform.position = danDestinationWorldPos;
-        yield return new WaitForEndOfFrame();
 
+        this.SetDanimation(moveToPoint.InteractionAreaIdleAnimation);
         this.isMoving = false;
     }
 

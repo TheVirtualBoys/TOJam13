@@ -33,6 +33,7 @@ public class DanGameController : MonoBehaviour {
     /// <summary>
     /// Handles the 
     /// </summary>
+    [EditorButton]
     private void HandleTitleSequenceComplete() {
         this.apartmentController.ResetApartment();
         this.danGameTitleController.gameObject.SetActive(false);

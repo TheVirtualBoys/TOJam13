@@ -113,6 +113,7 @@ MonoBehaviour:
   interactionMenuPrefab: {fileID: 114719006129521980, guid: bbc5d46a12a78439fb744f2db5a373b7,
     type: 2}
   interactionButton: {fileID: 114547634629039600}
+  interactionAreaIdleAnimation: BackIdle
   danLocation: {fileID: 0}
 --- !u!222 &222173220162867614
 CanvasRenderer:
@@ -135,6 +136,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 729, y: 89}
+  m_AnchoredPosition: {x: 612, y: 82}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}

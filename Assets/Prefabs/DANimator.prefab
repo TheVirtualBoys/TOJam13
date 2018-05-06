@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114202335016875638}
   - component: {fileID: 95889176092711566}
   - component: {fileID: 114444615771370176}
+  - component: {fileID: 114126019337962992}
   m_Layer: 0
   m_Name: DANimator
   m_TagString: Untagged
@@ -38,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1770862807883680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 70, y: -77, z: 0}
+  m_LocalScale: {x: 45, y: 45, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: a7301e94089790f49baec899930c467e, type: 2}
+  - {fileID: 2100000, guid: fb7bc1a307dfb4b4bac44da1174ae74b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104,6 +105,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114126019337962992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770862807883680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3ab063456bd489f8d985e439a7015d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danAnimationController: {fileID: 114444615771370176}
+  danSpeed: 350
 --- !u!114 &114202335016875638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: 4629fb5ebfa87e841af2a16f10f5f0f9, type: 2}
-  initialSkinName: Naked
+  initialSkinName: Suit
   initialFlipX: 0
   initialFlipY: 0
   separatorSlotNames: []

@@ -35,7 +35,21 @@ public class ApartmentSceneController : MonoBehaviour {
 
     #endregion
 
+    #region Monobehaviour
+
+    private void Start() {
+        foreach (InteractionPoint iPoint in this.interactionPoints) {
+            iPoint.OnInteractionPointSelected += this.HandleInteractionPointSelected;
+        }
+    }
+
+    #endregion
+
     #region Apartment Control
+
+    private void HandleInteractionPointSelected(InteractionPoint pointSelected) {
+        this.apartmentDan.MoveToPoint(pointSelected);
+    }
 
     /// <summary>
     /// Resets the apartment scene so that we can play a new dan session.
