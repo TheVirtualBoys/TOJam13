@@ -57,11 +57,16 @@ public class InteractionButton : MonoBehaviour {
             AdventureLog.Instance.UseAction(interaction);
 
         } else {
-            // submenu time
-            InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
-            menu.transform.SetParent(this.parentMenu != null ? this.parentMenu.transform.parent : this.transform);
-            menu.Init(AdventureLog.Instance.FilterAvailableNodes(this.node.children));
+            List<NodeData> avaliableNodes = AdventureLog.Instance.FilterAvailableNodes(this.node.children);
+
+            if (avaliableNodes.Count > 0) {
+                // submenu time
+                InteractionMenu menu = GameObject.Instantiate(this.menuPrefab);
+                menu.transform.SetParent(this.parentMenu != null ? this.parentMenu.transform.parent : this.transform);
+                menu.Init(avaliableNodes);
+            }
         }
+
         if (this.parentMenu != null) {
             this.parentMenu.Close();
         }

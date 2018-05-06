@@ -49,6 +49,10 @@ public class ApartmentSceneController : MonoBehaviour {
 
     private void HandleInteractionPointSelected(InteractionPoint pointSelected) {
         this.apartmentDan.MoveToPoint(pointSelected);
+
+        foreach(InteractionPoint interactionPoint in this.interactionPoints) {
+            interactionPoint.SetTitleDisplayState(interactionPoint == pointSelected);
+        }
     }
 
     /// <summary>
