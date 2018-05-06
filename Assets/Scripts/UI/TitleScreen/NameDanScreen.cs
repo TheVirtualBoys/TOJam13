@@ -13,6 +13,12 @@ public class NameDanScreen : MonoBehaviour {
     [SerializeField]
     private InputField danNameField = null;
 
+    public void OnEnable()
+    {
+        this.danNameField.Select();
+        this.danNameField.ActivateInputField();
+    }
+
     /// <summary>
     /// The handles the submit name being entered for dan.
     /// </summary>

@@ -57,7 +57,7 @@ public class TitleController : MonoBehaviour {
     /// The completion screen.
     /// </summary>
     [SerializeField]
-    private GameCompletionScreen completionScreen = null;
+    private EndScreen completionScreen = null;
 
     /// <summary>
     /// The name of the dan.
