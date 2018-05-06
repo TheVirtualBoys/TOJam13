@@ -1,12 +1,18 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/Art/Atlases/UI_InGame/UI_InGame.tpsheet
 - Assets/Art/Atlases/UI_Splash/UI_Splash.tpsheet
+- Assets/Art/Atlases/UI_Splash_BG/UI_Splash_BG.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
+- Assets/Art/Atlases/UI_InGame/UI_InGame.png
 - Assets/Art/Atlases/UI_Splash/UI_Splash.png
+- Assets/Art/Atlases/UI_Splash_BG/UI_Splash_BG.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 enableDebugOutput: 0
