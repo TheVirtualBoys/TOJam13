@@ -28,8 +28,7 @@ TextureImporter:
     21300046: UI_Splash_Napkin_Text_NameTheDan
     21300048: UI_Splash_SpeechBubble
     21300050: UI_Splash_Button_OK
-  externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -69,30 +68,25 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
-  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
-    buildTarget: DefaultTexturePlatform
+  - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -110,12 +104,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 1948e23f0088942c6a79469b3eef9248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Postgame_Napkin_CheckboxLine
       rect:
@@ -130,12 +118,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: dc1a6239b5f4e44a69cbc2351c3a0a42
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Postgame_Napkin_Checkmark
       rect:
@@ -150,12 +132,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 687b9249961d2404cbc904b6d4e4e14b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Postgame_Napkin_Text_StuffYouDid
       rect:
@@ -170,12 +146,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: b24d94f76268849ec96ef45fdcfb219b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Postgame_Napkin_Text_StuffYouDidntDid
       rect:
@@ -190,12 +160,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 1bdc1a2b8cb39457c8d81abd3b469ba2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Postgame_Napkin_X
       rect:
@@ -210,12 +174,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: c78f0adab7c714b14b2c5c6be2cc794a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Postgame_TitleBanner
       rect:
@@ -230,12 +188,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: bffb0e84ee6704044b6cd05c1e93b1f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Button_OK
       rect:
@@ -250,12 +202,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 0e57e3950a7c040699d090c0f30f1e7b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Decor_Circle
       rect:
@@ -270,12 +216,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 5d97dc20d2c904cf1a80418b5d1badd4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Decor_Rectangle
       rect:
@@ -290,12 +230,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: c8bdd0ce93ffc4915899edbd89681055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Decor_Squiggle
       rect:
@@ -310,12 +244,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 74b2ba918cb6c4fdd9fe5e75f2db37c6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Decor_Swirl
       rect:
@@ -330,12 +258,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: cd566ba71a69c4d0896336252f81e6dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Decor_Triangle
       rect:
@@ -350,12 +272,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: bc002a966e76c46c4a97394eb63e7ee9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Item_BeerBottle
       rect:
@@ -370,12 +286,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: aa8244d6cea944bc0bdac133fa15f0b3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Item_BeerCan
       rect:
@@ -390,12 +300,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: e92f157a4e0ee4829a8bd4b47fa703b9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Item_ManCaveRules
       rect:
@@ -410,12 +314,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 56217627a1f1546699f3883796affd4e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Item_OkayBeerSign
       rect:
@@ -430,12 +328,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 777df56fd22334a68a8fccb203f7d65a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Item_PizzaSock
       rect:
@@ -450,12 +342,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 2b5b50143b3544da5b474d3aaabb9a9c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Item_Trash
       rect:
@@ -470,12 +356,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: fb3f41a42b9e140f6b229800fb8b78cb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Item_Trophy
       rect:
@@ -490,12 +370,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 48f6cb9fdd0a7481a92f7552c81819ad
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Napkin_Backing
       rect:
@@ -510,12 +384,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 4bfacec5a2b6140449624ff5ef1d28aa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Napkin_Text_NameTheDan
       rect:
@@ -530,12 +398,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 3b9ada6b206f546fb94e007e0035cf16
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_SpeechBubble
       rect:
@@ -550,12 +412,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 3cc95663e7880403ebb544cb5797bc41
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_Tap2PlayBanner
       rect:
@@ -570,12 +426,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: 1d77dc1dc2230493d80ac3c80c561e25
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: UI_Splash_TitleText
       rect:
@@ -590,20 +440,8 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
-      bones: []
-      spriteID: e14ec7c9bb8b9437397b99f479bde8d2
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
-    bones: []
-    spriteID: 
-    vertices: []
-    indices: 
-    edges: []
-    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
