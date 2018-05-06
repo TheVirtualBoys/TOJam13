@@ -5523,6 +5523,21 @@ Prefab:
       propertyPath: interactionRootID
       value: computer
       objectReference: {fileID: 0}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionAreaIdleAnimation
+      value: Computer
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -5763,6 +5778,21 @@ Prefab:
         type: 2}
       propertyPath: interactionRootID
       value: sink
+      objectReference: {fileID: 0}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionAreaIdleAnimation
+      value: BackDoingStuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
@@ -6073,6 +6103,16 @@ Prefab:
         type: 2}
       propertyPath: interactionRootID
       value: fridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
@@ -10864,6 +10904,16 @@ Prefab:
       propertyPath: interactionRootID
       value: cupboard
       objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -11063,6 +11113,21 @@ Prefab:
       propertyPath: interactionRootID
       value: couch
       objectReference: {fileID: 0}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionAreaIdleAnimation
+      value: FrontIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -11121,7 +11186,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 2000
+  far clip plane: 3000
   field of view: 60
   orthographic: 1
   orthographic size: 540
@@ -11147,7 +11212,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1321919646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1000}
+  m_LocalPosition: {x: 0, y: 0, z: -1500}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 376166420}
@@ -11397,6 +11462,21 @@ Prefab:
       propertyPath: interactionRootID
       value: wardrobe
       objectReference: {fileID: 0}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionAreaIdleAnimation
+      value: BackDoingStuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -11590,6 +11670,21 @@ Prefab:
       propertyPath: interactionRootID
       value: oven
       objectReference: {fileID: 0}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionAreaIdleAnimation
+      value: FrontDoingStuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -11736,6 +11831,16 @@ Prefab:
         type: 2}
       propertyPath: interactionRootID
       value: washroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
@@ -12293,6 +12398,16 @@ Prefab:
       propertyPath: interactionRootID
       value: mirror
       objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -12383,8 +12498,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1737339789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 628, y: -410, z: -410}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 651.5, y: -421.2, z: -497.7}
+  m_LocalScale: {x: 0.96091026, y: 0.96091026, z: 0.96091026}
   m_Children: []
   m_Father: {fileID: 60728112}
   m_RootOrder: 11
@@ -12619,6 +12734,16 @@ Prefab:
       propertyPath: interactionRootID
       value: bed
       objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -12650,8 +12775,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1827980030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 435, y: -382, z: -382}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 466.1, y: -394.3, z: -384.3}
+  m_LocalScale: {x: 0.96091026, y: 0.96091026, z: 0.96091026}
   m_Children: []
   m_Father: {fileID: 60728112}
   m_RootOrder: 12
@@ -12721,7 +12846,7 @@ Prefab:
     - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
@@ -12815,7 +12940,17 @@ Prefab:
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionAreaIdleAnimation
-      value: FrontIdle
+      value: FrontDoingStuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
@@ -12936,6 +13071,16 @@ Prefab:
       propertyPath: interactionRootID
       value: microwave
       objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -13055,6 +13200,16 @@ Prefab:
       propertyPath: interactionRootID
       value: window
       objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
@@ -13136,7 +13291,7 @@ Prefab:
     - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1000
       objectReference: {fileID: 0}
     - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
@@ -13166,12 +13321,12 @@ Prefab:
     - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -638
+      value: -530
       objectReference: {fileID: 0}
     - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -239
+      value: -359
       objectReference: {fileID: 0}
     - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
@@ -13226,6 +13381,25 @@ Prefab:
         type: 2}
       propertyPath: interactionRootID
       value: gamezone
+      objectReference: {fileID: 0}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionAreaIdleAnimation
+      value: Gaming
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988463641857892, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
