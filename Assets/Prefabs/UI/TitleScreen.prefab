@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1173963624064472
 GameObject:
   m_ObjectHideFlags: 1
@@ -1292,11 +1292,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!23 &23090253958442244
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -1306,9 +1306,11 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: a7301e94089790f49baec899930c467e, type: 2}
   m_StaticBatchInfo:
@@ -1321,6 +1323,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1338,9 +1341,11 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: a7301e94089790f49baec899930c467e, type: 2}
   m_StaticBatchInfo:
@@ -1353,6 +1358,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1392,6 +1398,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114001609506530154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1923,7 +1930,7 @@ MonoBehaviour:
   mainTitle: {fileID: 1540570836887230}
   nameDanScreen: {fileID: 114228211436230962}
   danIntroScreen: {fileID: 114416650168994548}
-  completionScreen: {fileID: 114217450994925542}
+  completionScreen: {fileID: 0}
 --- !u!114 &114238717136500222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3990,7 +3997,7 @@ RectTransform:
   m_LocalScale: {x: 0.99958074, y: 0.99958074, z: 0.99958074}
   m_Children: []
   m_Father: {fileID: 224953641602488410}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4152,7 +4159,7 @@ RectTransform:
   m_LocalScale: {x: 0.99958074, y: 0.99958074, z: 0.99958074}
   m_Children: []
   m_Father: {fileID: 224953641602488410}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4206,7 +4213,7 @@ RectTransform:
   m_LocalScale: {x: 0.9995816, y: 0.9995816, z: 0.99958074}
   m_Children: []
   m_Father: {fileID: 224953641602488410}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -284.8}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4749,7 +4756,7 @@ RectTransform:
   m_LocalScale: {x: 0.99958104, y: 0.99958104, z: 0.99958074}
   m_Children: []
   m_Father: {fileID: 224953641602488410}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -284.8}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4807,7 +4814,7 @@ RectTransform:
   m_LocalScale: {x: 0.99958074, y: 0.99958074, z: 0.99958074}
   m_Children: []
   m_Father: {fileID: 224953641602488410}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4844,7 +4851,7 @@ RectTransform:
   m_LocalScale: {x: 0.99958074, y: 0.99958074, z: 0.99958074}
   m_Children: []
   m_Father: {fileID: 224953641602488410}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5088,16 +5095,16 @@ RectTransform:
   m_Children:
   - {fileID: 224462033374968104}
   - {fileID: 224672376186116360}
-  - {fileID: 224679298631229684}
   - {fileID: 224049007294693868}
+  - {fileID: 224679298631229684}
   - {fileID: 224241310201768964}
   - {fileID: 224778323214139808}
   - {fileID: 224546970327194298}
   - {fileID: 224103847373208522}
   - {fileID: 224263510660336160}
   - {fileID: 224215376079476160}
-  - {fileID: 224674389786255168}
   - {fileID: 224182975740899766}
+  - {fileID: 224674389786255168}
   - {fileID: 224275807885273308}
   - {fileID: 224978872431708832}
   - {fileID: 224144073900455924}
@@ -5121,8 +5128,8 @@ RectTransform:
   - {fileID: 224407970479412712}
   - {fileID: 224322368507094314}
   - {fileID: 224216765920805428}
-  - {fileID: 224586052340140480}
   - {fileID: 224229012349535304}
+  - {fileID: 224586052340140480}
   - {fileID: 224406484875432520}
   - {fileID: 224826261863808246}
   - {fileID: 224726324854379050}

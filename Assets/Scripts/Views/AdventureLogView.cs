@@ -17,6 +17,6 @@ public class AdventureLogView : MonoBehaviour
 
 	public void AddLogLine(string text)
 	{
-		this.text.text = this.text.text + "\n" + text;
+        this.text.text = text;
 	}
 }
