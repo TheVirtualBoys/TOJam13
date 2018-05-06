@@ -126,6 +126,9 @@ public class TitleController : MonoBehaviour {
         this.nameDanScreen.gameObject.SetActive(titleState == TitleState.NameDan);
         this.danIntroScreen.gameObject.SetActive(titleState == TitleState.DanIntro);
         this.completionScreen.gameObject.SetActive(titleState == TitleState.EndScreen);
+		if (titleState == TitleState.EndScreen) {
+			this.completionScreen.AddAchievements(AdventureLog.Instance.achievementsAchieved);
+		}
     }
 
     #endregion
@@ -133,9 +136,11 @@ public class TitleController : MonoBehaviour {
 
     public void HandleRetryButton() {
         AdventureLog.Instance.ResetFlags();
+		Debug.Log("Retry");
     }
 
     public void HandleQuitButton() {
+		Debug.Log("Quit");
         this.completionScreen.ClearAchievements();
         this.SetTitleState(TitleState.Title);
     }
