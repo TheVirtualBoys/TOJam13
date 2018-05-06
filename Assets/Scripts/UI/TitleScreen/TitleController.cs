@@ -112,6 +112,11 @@ public class TitleController : MonoBehaviour {
         this.SetTitleState(TitleState.DanIntro);
     }
 
+    public void GameOver() {
+        this.SetTitleState(TitleState.EndScreen);
+        //TODO: Set up the end screen stuff based on data.
+    }
+
     /// <summary>
     /// Ensures that the correct screen is visible.
     /// </summary>
