@@ -14,7 +14,7 @@ public class InteractionPoint : MonoBehaviour {
 
     public void Start() {
         DataManager.Instance.DoOnLoaded(()=>{
-            this.GetComponent<InteractionButton>().Init(DataManager.Instance.rootNode.GetChild(this.interactionRootID));
+            this.GetComponent<InteractionButton>().Init(DataManager.Instance.rootNode.GetChild(this.interactionRootID), null);
         });
     }
 
