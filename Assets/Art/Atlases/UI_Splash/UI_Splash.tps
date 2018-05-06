@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.6.3</string>
         <key>fileName</key>
-        <string>T:/New folder/Exports/UI_Splash.tps</string>
+        <string>C:/Users/graphic/Documents/GitHub/TOJam13/Assets/Art/Atlases/UI_Splash/UI_Splash.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>unity-texture2d</string>
         <key>textureFileName</key>
-        <filename></filename>
+        <filename>UI_Splash.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -183,20 +183,7 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">UI_Splash_BG.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>480,270,960,540</rect>
-                <key>scale9Paddings</key>
-                <rect>480,270,960,540</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">UI_Splash_Decor_Circle.png</key>
+            <key type="filename">Sprites/UI_Splash_Decor_Circle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -209,7 +196,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Decor_Rectangle.png</key>
+            <key type="filename">Sprites/UI_Splash_Decor_Rectangle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -222,7 +209,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Decor_Squiggle.png</key>
+            <key type="filename">Sprites/UI_Splash_Decor_Squiggle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -235,7 +222,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Decor_Swirl.png</key>
+            <key type="filename">Sprites/UI_Splash_Decor_Swirl.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -248,7 +235,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Decor_Triangle.png</key>
+            <key type="filename">Sprites/UI_Splash_Decor_Triangle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -261,7 +248,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Item_BeerBottle.png</key>
+            <key type="filename">Sprites/UI_Splash_Item_BeerBottle.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -274,7 +261,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Item_BeerCan.png</key>
+            <key type="filename">Sprites/UI_Splash_Item_BeerCan.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -287,7 +274,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Item_ManCaveRules.png</key>
+            <key type="filename">Sprites/UI_Splash_Item_ManCaveRules.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -300,7 +287,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Item_OkayBeerSign.png</key>
+            <key type="filename">Sprites/UI_Splash_Item_OkayBeerSign.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -313,7 +300,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Item_PizzaSock.png</key>
+            <key type="filename">Sprites/UI_Splash_Item_PizzaSock.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -326,7 +313,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Item_Trash.png</key>
+            <key type="filename">Sprites/UI_Splash_Item_Trash.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -339,7 +326,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Item_Trophy.png</key>
+            <key type="filename">Sprites/UI_Splash_Item_Trophy.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -352,7 +339,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_Tap2PlayBanner.png</key>
+            <key type="filename">Sprites/UI_Splash_Tap2PlayBanner.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -365,7 +352,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">UI_Splash_TitleText.png</key>
+            <key type="filename">Sprites/UI_Splash_TitleText.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -375,27 +362,166 @@
                 <rect>187,87,373,173</rect>
                 <key>scale9Paddings</key>
                 <rect>187,87,373,173</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Postgame_Buttons_ReplayNewGame.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>124,60,247,121</rect>
+                <key>scale9Paddings</key>
+                <rect>124,60,247,121</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Postgame_Napkin_CheckboxLine.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>151,28,301,55</rect>
+                <key>scale9Paddings</key>
+                <rect>151,28,301,55</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Postgame_Napkin_Checkmark.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>22,16,45,33</rect>
+                <key>scale9Paddings</key>
+                <rect>22,16,45,33</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Postgame_Napkin_Text_StuffYouDid.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>147,30,295,59</rect>
+                <key>scale9Paddings</key>
+                <rect>147,30,295,59</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Postgame_Napkin_Text_StuffYouDidntDid.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>167,31,334,61</rect>
+                <key>scale9Paddings</key>
+                <rect>167,31,334,61</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Postgame_Napkin_X.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>13,14,25,27</rect>
+                <key>scale9Paddings</key>
+                <rect>13,14,25,27</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Postgame_TitleBanner.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>373,55,747,109</rect>
+                <key>scale9Paddings</key>
+                <rect>373,55,747,109</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Splash_Napkin_Backing.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>173,195,345,389</rect>
+                <key>scale9Paddings</key>
+                <rect>173,195,345,389</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Splash_Napkin_Text_NameTheDan.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>166,95,333,190</rect>
+                <key>scale9Paddings</key>
+                <rect>166,95,333,190</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">T:/New folder/New Assets To Add/UI_Splash_SpeechBubble.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>235,187,471,374</rect>
+                <key>scale9Paddings</key>
+                <rect>235,187,471,374</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>UI_Splash_TitleText.png</filename>
-            <filename>UI_Splash_BG.png</filename>
-            <filename>UI_Splash_Decor_Circle.png</filename>
-            <filename>UI_Splash_Decor_Rectangle.png</filename>
-            <filename>UI_Splash_Decor_Squiggle.png</filename>
-            <filename>UI_Splash_Decor_Swirl.png</filename>
-            <filename>UI_Splash_Decor_Triangle.png</filename>
-            <filename>UI_Splash_Item_BeerBottle.png</filename>
-            <filename>UI_Splash_Item_BeerCan.png</filename>
-            <filename>UI_Splash_Item_ManCaveRules.png</filename>
-            <filename>UI_Splash_Item_OkayBeerSign.png</filename>
-            <filename>UI_Splash_Item_PizzaSock.png</filename>
-            <filename>UI_Splash_Item_Trash.png</filename>
-            <filename>UI_Splash_Item_Trophy.png</filename>
-            <filename>UI_Splash_Tap2PlayBanner.png</filename>
+            <filename>Sprites/UI_Splash_Tap2PlayBanner.png</filename>
+            <filename>Sprites/UI_Splash_TitleText.png</filename>
+            <filename>Sprites/UI_Splash_Decor_Circle.png</filename>
+            <filename>Sprites/UI_Splash_Decor_Rectangle.png</filename>
+            <filename>Sprites/UI_Splash_Decor_Squiggle.png</filename>
+            <filename>Sprites/UI_Splash_Decor_Swirl.png</filename>
+            <filename>Sprites/UI_Splash_Decor_Triangle.png</filename>
+            <filename>Sprites/UI_Splash_Item_BeerBottle.png</filename>
+            <filename>Sprites/UI_Splash_Item_BeerCan.png</filename>
+            <filename>Sprites/UI_Splash_Item_ManCaveRules.png</filename>
+            <filename>Sprites/UI_Splash_Item_OkayBeerSign.png</filename>
+            <filename>Sprites/UI_Splash_Item_PizzaSock.png</filename>
+            <filename>Sprites/UI_Splash_Item_Trash.png</filename>
+            <filename>Sprites/UI_Splash_Item_Trophy.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Postgame_Napkin_Checkmark.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Postgame_Napkin_Text_StuffYouDid.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Postgame_Napkin_Text_StuffYouDidntDid.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Postgame_Napkin_X.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Postgame_TitleBanner.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Splash_Napkin_Backing.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Splash_Napkin_Text_NameTheDan.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Splash_SpeechBubble.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Postgame_Buttons_ReplayNewGame.png</filename>
+            <filename>T:/New folder/New Assets To Add/UI_Postgame_Napkin_CheckboxLine.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

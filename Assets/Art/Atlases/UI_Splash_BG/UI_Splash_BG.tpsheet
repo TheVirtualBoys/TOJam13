@@ -1,0 +1,15 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:1a4463011e2dac7377ae1c21051fcacc:0aecf6020beead524fa924cce5c31e3d:fe46b59d9425ca8b5c16b744d21272ec$
+#
+:format=40300
+:texture=UI_Splash_BG.png
+:size=2048x2048
+:pivotpoints=enabled
+:borders=disabled
+
+UI_Splash_BG;1;967;1920;1080; 0.5;0.5; 0;0;0;0; 4;1920;0;0;0;0;1080;1920;1080; 2;1;2;3;0;1;3

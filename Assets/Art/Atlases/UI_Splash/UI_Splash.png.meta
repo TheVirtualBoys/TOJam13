@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 244c8b38abcf2804e91168360452a655
+timeCreated: 1525557278
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: UI_Splash_BG
+    21300002: UI_Splash_Decor_Circle
+    21300004: UI_Splash_Decor_Rectangle
+    21300006: UI_Splash_Decor_Squiggle
+    21300008: UI_Splash_Decor_Swirl
+    21300010: UI_Splash_Decor_Triangle
+    21300012: UI_Splash_Item_BeerBottle
+    21300014: UI_Splash_Item_BeerCan
+    21300016: UI_Splash_Item_ManCaveRules
+    21300018: UI_Splash_Item_OkayBeerSign
+    21300020: UI_Splash_Item_PizzaSock
+    21300022: UI_Splash_Item_Trash
+    21300024: UI_Splash_Item_Trophy
+    21300026: UI_Splash_Tap2PlayBanner
+    21300028: UI_Splash_TitleText
+    21300030: UI_Postgame_Buttons_ReplayNewGame
+    21300032: UI_Postgame_Napkin_CheckboxLine
+    21300034: UI_Postgame_Napkin_Checkmark
+    21300036: UI_Postgame_Napkin_Text_StuffYouDid
+    21300038: UI_Postgame_Napkin_Text_StuffYouDidntDid
+    21300040: UI_Postgame_Napkin_X
+    21300042: UI_Postgame_TitleBanner
+    21300044: UI_Splash_Napkin_Backing
+    21300046: UI_Splash_Napkin_Text_NameTheDan
+    21300048: UI_Splash_SpeechBubble
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_Postgame_Buttons_ReplayNewGame
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 1806
+        width: 495
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Postgame_Napkin_CheckboxLine
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 255
+        width: 603
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Postgame_Napkin_Checkmark
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 849
+        width: 89
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Postgame_Napkin_Text_StuffYouDid
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 368
+        width: 589
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Postgame_Napkin_Text_StuffYouDidntDid
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 871
+        width: 668
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Postgame_Napkin_X
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1945
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Postgame_TitleBanner
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1829
+        width: 1493
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Decor_Circle
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1851
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Decor_Rectangle
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1526
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Decor_Squiggle
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1882
+        width: 40
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Decor_Swirl
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 2001
+        width: 53
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Decor_Triangle
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1465
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Item_BeerBottle
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 916
+        width: 121
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Item_BeerCan
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1151
+        width: 143
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Item_ManCaveRules
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 790
+        width: 176
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Item_OkayBeerSign
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1572
+        width: 342
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Item_PizzaSock
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1293
+        width: 254
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Item_Trash
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1345
+        width: 149
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Item_Trophy
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1019
+        width: 185
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Napkin_Backing
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 678
+        width: 691
+        height: 778
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Napkin_Text_NameTheDan
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 489
+        width: 665
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_SpeechBubble
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1079
+        width: 941
+        height: 748
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_Tap2PlayBanner
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 995
+        width: 874
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: UI_Splash_TitleText
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1458
+        width: 746
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
