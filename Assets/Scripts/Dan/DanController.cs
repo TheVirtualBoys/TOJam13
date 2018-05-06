@@ -84,7 +84,7 @@ public class DanController : MonoBehaviour {
         Vector3 danDestinationWorldPos = moveToPoint.DanLocation.position;
 
 
-        if (!Mathf.Approximately(this.transform.position.x, moveToPoint.DanLocation.position.x) &&
+        if (!Mathf.Approximately(this.transform.position.x, moveToPoint.DanLocation.position.x) ||
             !Mathf.Approximately(this.transform.position.y, moveToPoint.DanLocation.position.y)) {
             this.isMoving = true;
             string walkingAnimation = "FrontWalk";

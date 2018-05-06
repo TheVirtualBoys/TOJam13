@@ -35,6 +35,12 @@ public class InteractionPoint : MonoBehaviour {
     [SerializeField]
     private Button interactionButton = null;
 
+    [SerializeField]
+    private GameObject interactionTitleBar = null;
+
+    [SerializeField]
+    private Text interactionName = null;
+
     [SerializeField, Header("----- Interaction Data ------")]
     private string interactionAreaIdleAnimation = "FrontIdle";
     /// <summary>
@@ -71,6 +77,9 @@ public class InteractionPoint : MonoBehaviour {
     /// </summary>
     private void Start() {
         DataManager.Instance.DoOnLoaded(() => {
+            this.interactionRootNodeData = DataManager.Instance.rootNode.GetChild(this.interactionRootID);
+            this.interactionName.text = this.interactionRootNodeData.title;
+
             this.GetComponent<InteractionButton>().Init(DataManager.Instance.rootNode.GetChild(this.interactionRootID), null);
         });
 
@@ -82,6 +91,10 @@ public class InteractionPoint : MonoBehaviour {
     /// </summary>
     private void OnDestroy() {
         this.interactionButton.onClick.RemoveListener(this.HandleButtonPressed);
+    }
+
+    public void SetTitleDisplayState(bool displayState) {
+        this.interactionTitleBar.gameObject.SetActive(displayState);
     }
 
     /// <summary>

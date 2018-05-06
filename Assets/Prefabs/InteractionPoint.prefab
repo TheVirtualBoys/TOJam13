@@ -208,6 +208,8 @@ MonoBehaviour:
   interactionMenuPrefab: {fileID: 114719006129521980, guid: bbc5d46a12a78439fb744f2db5a373b7,
     type: 2}
   interactionButton: {fileID: 114547634629039600}
+  interactionTitleBar: {fileID: 1965527282599420}
+  interactionName: {fileID: 114297866118186440}
   interactionAreaIdleAnimation: BackIdle
   danLocation: {fileID: 0}
 --- !u!114 &114934992833996458
