@@ -115,6 +115,14 @@ public class InteractionPoint : MonoBehaviour {
         // Get populate the menu of this display with the menu items for the display.
         List<NodeData> rootNodeDataList = AdventureLog.Instance.FilterAvailableNodes(this.interactionRootNodeData.children);
         this.interactionMenuSelector.SetRootNode(this.interactionRootNodeData);
+
+        this.transform.SetAsLastSibling();
+    }
+
+    public void CheckVisibleState() {
+        List<NodeData> rootNodeDataList = AdventureLog.Instance.FilterAvailableNodes(this.interactionRootNodeData.children);
+
+        this.gameObject.SetActive(rootNodeDataList.Count > 0);
     }
 
     /// <summary>

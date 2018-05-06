@@ -41,6 +41,8 @@ public class ApartmentSceneController : MonoBehaviour {
         foreach (InteractionPoint iPoint in this.interactionPoints) {
             iPoint.OnInteractionPointSelected += this.HandleInteractionPointSelected;
         }
+
+        AdventureLog.Instance.RegisterAllEvents(this.OnFlagChange);
     }
 
     #endregion
@@ -68,6 +70,13 @@ public class ApartmentSceneController : MonoBehaviour {
 
         foreach(InteractionPoint point in this.interactionPoints) {
             point.CloseInteractionPoint();
+            point.CheckVisibleState();
+        }
+    }
+
+    public void OnFlagChange(string flagID, bool flagState) {
+        foreach (InteractionPoint point in this.interactionPoints) {
+            point.CheckVisibleState();
         }
     }
 
