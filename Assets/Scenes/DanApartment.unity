@@ -113,6 +113,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &24977163 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1331976747}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1 &60728111
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,6 +270,12 @@ Transform:
   m_Father: {fileID: 60728112}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &183007612 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1614535539}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1 &196696787
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +352,19 @@ MonoBehaviour:
   apartmentDan: {fileID: 738153838}
   interactionPoints:
   - {fileID: 1687231466}
+  - {fileID: 24977163}
+  - {fileID: 183007612}
+  - {fileID: 1682381540}
+  - {fileID: 1500054601}
+  - {fileID: 811508297}
+  - {fileID: 1577970413}
+  - {fileID: 1331451514}
+  - {fileID: 674043160}
+  - {fileID: 901713114}
+  - {fileID: 1235034485}
+  - {fileID: 588885219}
+  - {fileID: 392263607}
+  - {fileID: 1999864140}
 --- !u!4 &196696791
 Transform:
   m_ObjectHideFlags: 0
@@ -520,6 +545,12 @@ Transform:
   m_Father: {fileID: 138763361}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &392263607 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 2008054851}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1 &438388192 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1770862807883680, guid: ddc7260453bf74a968ce17c141fa72fe,
@@ -5375,6 +5406,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &588885219 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1289421182}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1001 &617231574
 Prefab:
   m_ObjectHideFlags: 0
@@ -5480,7 +5517,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 1546140360}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
@@ -5528,6 +5565,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &674043160 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1349256808}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!114 &701887284 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114229204526890256, guid: fdb0d00047f194fa4b49aa457c26f36d,
@@ -5604,6 +5647,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4788158513471172, guid: ddc7260453bf74a968ce17c141fa72fe,
     type: 2}
   m_PrefabInternal: {fileID: 738153837}
+--- !u!114 &811508297 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1075703202}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1001 &889459536
 Prefab:
   m_ObjectHideFlags: 0
@@ -5723,6 +5772,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224111065506653554, guid: c23c7fde5107448618449c0f6ad728d8,
     type: 2}
   m_PrefabInternal: {fileID: 889459536}
+--- !u!114 &901713114 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 617231574}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1 &920671265
 GameObject:
   m_ObjectHideFlags: 0
@@ -10891,6 +10946,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1235034485 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1870908356}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1001 &1289421182
 Prefab:
   m_ObjectHideFlags: 0
@@ -10996,7 +11057,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 1582477333}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
@@ -11219,6 +11280,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd4dd1f8a9d5849538f5d032a91440e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1331451514 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1151876586}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1001 &1331976747
 Prefab:
   m_ObjectHideFlags: 0
@@ -11324,7 +11391,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 250640145}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
@@ -11664,7 +11731,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 370739556}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
@@ -12047,6 +12114,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224688257599589246, guid: fdb0d00047f194fa4b49aa457c26f36d,
     type: 2}
   m_PrefabInternal: {fileID: 1492025038}
+--- !u!114 &1500054601 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1894968463}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1 &1546140359
 GameObject:
   m_ObjectHideFlags: 0
@@ -12075,6 +12148,12 @@ Transform:
   m_Father: {fileID: 138763361}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1577970413 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 889459536}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1 &1582477332
 GameObject:
   m_ObjectHideFlags: 0
@@ -12208,7 +12287,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 250640145}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
@@ -12269,6 +12348,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1682381540 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1966131222}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!114 &1687231466 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
@@ -12528,7 +12613,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 250640145}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
@@ -12721,11 +12806,16 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 1546140360}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
       value: desk
+      objectReference: {fileID: 0}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionAreaIdleAnimation
+      value: FrontIdle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
@@ -12959,7 +13049,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 378216562}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID
@@ -13020,6 +13110,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4471647594786872, guid: 74e9b04bdf7094fd69f21c896b8c9c46,
     type: 2}
   m_PrefabInternal: {fileID: 1987918865}
+--- !u!114 &1999864140 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1476550674}
+  m_Script: {fileID: 11500000, guid: 5755114eecc9e4f9d8fb69820cc88b5a, type: 3}
 --- !u!1001 &2008054851
 Prefab:
   m_ObjectHideFlags: 0
@@ -13125,7 +13221,7 @@ Prefab:
         type: 2}
       propertyPath: danLocation
       value: 
-      objectReference: {fileID: 1432615849}
+      objectReference: {fileID: 1582477333}
     - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
         type: 2}
       propertyPath: interactionRootID

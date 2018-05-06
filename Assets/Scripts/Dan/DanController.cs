@@ -83,25 +83,29 @@ public class DanController : MonoBehaviour {
     private IEnumerator DanMovementCoroutine(InteractionPoint moveToPoint) {
         Vector3 danDestinationWorldPos = moveToPoint.DanLocation.position;
 
-        this.isMoving = true;
-        string walkingAnimation = "FrontWalk";
-        // Figure out if the point is higher or lower than the current dan position.
-        if (danDestinationWorldPos.y > this.transform.position.y) {
-            walkingAnimation = "BackWalk";
-        }
 
-        this.SetDanimation(walkingAnimation);
-        while (true) {
-            Vector2 direction = danDestinationWorldPos - this.transform.position;
-            if (direction.sqrMagnitude < ((this.danSpeed * Time.deltaTime) * (this.danSpeed * Time.deltaTime))) {
-                break;
+        if (!Mathf.Approximately(this.transform.position.x, moveToPoint.DanLocation.position.x) &&
+            !Mathf.Approximately(this.transform.position.y, moveToPoint.DanLocation.position.y)) {
+            this.isMoving = true;
+            string walkingAnimation = "FrontWalk";
+            // Figure out if the point is higher or lower than the current dan position.
+            if (danDestinationWorldPos.y > this.transform.position.y) {
+                walkingAnimation = "BackWalk";
             }
-            direction.Normalize();
-            this.transform.Translate((direction * danSpeed) * Time.deltaTime, Space.World);
-            yield return new WaitForEndOfFrame();
-        }
 
-        this.transform.position = danDestinationWorldPos;
+            this.SetDanimation(walkingAnimation);
+            while (true) {
+                Vector2 direction = danDestinationWorldPos - this.transform.position;
+                if (direction.sqrMagnitude < ((this.danSpeed * Time.deltaTime) * (this.danSpeed * Time.deltaTime))) {
+                    break;
+                }
+                direction.Normalize();
+                this.transform.Translate((direction * danSpeed) * Time.deltaTime, Space.World);
+                yield return new WaitForEndOfFrame();
+            }
+
+            this.transform.position = danDestinationWorldPos;
+        }
 
         this.SetDanimation(moveToPoint.InteractionAreaIdleAnimation);
         this.isMoving = false;
