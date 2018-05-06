@@ -11181,6 +11181,11 @@ Prefab:
       propertyPath: danLocation
       value: 
       objectReference: {fileID: 1432615849}
+    - target: {fileID: 114921126565324148, guid: c23c7fde5107448618449c0f6ad728d8,
+        type: 2}
+      propertyPath: interactionRootID
+      value: oven
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c23c7fde5107448618449c0f6ad728d8, type: 2}
   m_IsPrefabParent: 0
