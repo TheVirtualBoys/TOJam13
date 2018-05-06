@@ -313,7 +313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1243631068039244
 GameObject:
   m_ObjectHideFlags: 1
@@ -544,7 +544,6 @@ GameObject:
   - component: {fileID: 4040937466005952}
   - component: {fileID: 20028800797246866}
   - component: {fileID: 124599983533258672}
-  - component: {fileID: 81054994386189374}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1257,13 +1256,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1794371505518730}
   m_Mesh: {fileID: 0}
---- !u!81 &81054994386189374
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1421051825935906}
-  m_Enabled: 1
 --- !u!95 &95639036696327850
 Animator:
   serializedVersion: 3

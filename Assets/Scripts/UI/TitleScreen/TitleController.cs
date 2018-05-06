@@ -107,7 +107,6 @@ public class TitleController : MonoBehaviour {
     /// </summary>
     /// <param name="enteredName">Entered name.</param>
     private void RegisterDanName(string enteredName) {
-        Debug.Log("Dan name register.");
         this.danName = enteredName;
         this.danIntroScreen.InitializeDanScreen(enteredName);
         this.SetTitleState(TitleState.DanIntro);

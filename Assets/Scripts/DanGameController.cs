@@ -25,7 +25,6 @@ public class DanGameController : MonoBehaviour {
     /// </summary>
     private void Start() {
         this.danGameTitleController.gameObject.SetActive(true);
-
         this.danGameTitleController.StartNewGameSelected += this.HandleTitleSequenceComplete;
     }
 
@@ -34,6 +33,7 @@ public class DanGameController : MonoBehaviour {
     /// <summary>
     /// Handles the 
     /// </summary>
+    [EditorButton]
     private void HandleTitleSequenceComplete() {
         this.apartmentController.ResetApartment();
         this.danGameTitleController.gameObject.SetActive(false);
