@@ -11,19 +11,19 @@
 *.cginc  text
 
 # Unity files, commit LF, checkout LF (these are YAML files, so diff them like normal text)
-*.unity                   text eol=lf merge=unityyamlmerge
-*.mat                     text eol=lf merge=unityyamlmerge
-*.meta                    text eol=lf merge=unityyamlmerge
-*.asset                   text eol=lf merge=unityyamlmerge
-*.fontsettings            text eol=lf merge=unityyamlmerge
-*.prefab                  text eol=lf merge=unityyamlmerge
-*.guiskin                 text eol=lf merge=unityyamlmerge
-*.physic[Mm]aterial       text eol=lf merge=unityyamlmerge
-*.physics[Mm]aterial      text eol=lf merge=unityyamlmerge
-*.physics[Mm]aterial2[Dd] text eol=lf merge=unityyamlmerge
-*.tags                    text eol=lf merge=unityyamlmerge
-*.anim                    text eol=lf merge=unityyamlmerge
-*.controller              text eol=lf merge=unityyamlmerge
+*.unity                   text eol=lf
+*.mat                     text eol=lf
+*.meta                    text eol=lf
+*.asset                   text eol=lf
+*.fontsettings            text eol=lf
+*.prefab                  text eol=lf
+*.guiskin                 text eol=lf
+*.physic[Mm]aterial       text eol=lf
+*.physics[Mm]aterial      text eol=lf
+*.physics[Mm]aterial2[Dd] text eol=lf
+*.tags                    text eol=lf
+*.anim                    text eol=lf
+*.controller              text eol=lf
 
 # Mac files, commit LF, checkout LF
 *.plist text eol=lf
